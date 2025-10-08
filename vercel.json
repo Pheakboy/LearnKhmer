@@ -1,112 +1,36 @@
 {
-  "version": 2,
-  "name": "learn-khmer",
-  "builds": [
+  "rewrites": [
     {
-      "src": "HTML/index.html",
-      "use": "@vercel/static"
+      "source": "/",
+      "destination": "/HTML/index.html"
     },
     {
-      "src": "HTML/**",
-      "use": "@vercel/static"
+      "source": "/index",
+      "destination": "/HTML/index.html"
     },
     {
-      "src": "CSS/**",
-      "use": "@vercel/static"
+      "source": "/home",
+      "destination": "/HTML/index.html"
     },
     {
-      "src": "JS/**",
-      "use": "@vercel/static"
+      "source": "/constant",
+      "destination": "/HTML/constant.html"
     },
     {
-      "src": "Image/**",
-      "use": "@vercel/static"
+      "source": "/consonant",
+      "destination": "/HTML/constant.html"
     },
     {
-      "src": "constant/**",
-      "use": "@vercel/static"
+      "source": "/vowel",
+      "destination": "/HTML/vowel.html"
     },
     {
-      "src": "vowel/**",
-      "use": "@vercel/static"
+      "source": "/independent",
+      "destination": "/HTML/independent.html"
     },
     {
-      "src": "special/**",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "category2/**",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "category3/**",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/",
-      "dest": "/HTML/index.html"
-    },
-    {
-      "src": "/index",
-      "dest": "/HTML/index.html"
-    },
-    {
-      "src": "/home",
-      "dest": "/HTML/index.html"
-    },
-    {
-      "src": "/constant",
-      "dest": "/HTML/constant.html"
-    },
-    {
-      "src": "/consonant",
-      "dest": "/HTML/constant.html"
-    },
-    {
-      "src": "/vowel",
-      "dest": "/HTML/vowel.html"
-    },
-    {
-      "src": "/independent",
-      "dest": "/HTML/independent.html"
-    },
-    {
-      "src": "/contact",
-      "dest": "/HTML/contact.html"
-    },
-    {
-      "src": "/CSS/(.*)",
-      "dest": "/CSS/$1"
-    },
-    {
-      "src": "/JS/(.*)",
-      "dest": "/JS/$1"
-    },
-    {
-      "src": "/Image/(.*)",
-      "dest": "/Image/$1"
-    },
-    {
-      "src": "/constant/(.*)",
-      "dest": "/constant/$1"
-    },
-    {
-      "src": "/vowel/(.*)",
-      "dest": "/vowel/$1"
-    },
-    {
-      "src": "/special/(.*)",
-      "dest": "/special/$1"
-    },
-    {
-      "src": "/category2/(.*)",
-      "dest": "/category2/$1"
-    },
-    {
-      "src": "/category3/(.*)",
-      "dest": "/category3/$1"
+      "source": "/contact",
+      "destination": "/HTML/contact.html"
     }
   ],
   "headers": [
@@ -158,5 +82,7 @@
         }
       ]
     }
-  ]
+  ],
+  "cleanUrls": true,
+  "trailingSlash": false
 }
