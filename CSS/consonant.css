@@ -1,28 +1,176 @@
-@import url('https://fonts.googleapis.com/css2?family=Hanuman&display=swap');*{
+@import url('https://fonts.googleapis.com/css2?family=Hanuman&display=swap');
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
     font-family: 'Hanuman', serif;
 }
+
+/* Modern Body Background */
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
 #type1,#type2,#type3,#cate1,#cate2,#cate3{
     cursor: pointer;
-    font-size: 25px;
+    font-size: 1.2rem;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border: 2px solid #e9ecef;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+    background: white;
+    color: #333;
+    margin: 8px 5px;
+    text-align: center;
+    font-family: 'Hanuman', serif;
 }
 #type1,#cate1{
-    background-color: #536DFE;
-    color: white;
+    background: linear-gradient(135deg, #667eea 0%, #5a67d8 100%) !important;
+    color: white !important;
+    border-color: #667eea !important;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3) !important;
+}
+#type2:hover,#type3:hover,#cate2:hover,#cate3:hover{
+    border-color: #667eea !important;
+    color: #667eea !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.2) !important;
+    background: white !important;
+}
+#type2.active,#type3.active,#cate2.active,#cate3.active{
+    background: linear-gradient(135deg, #667eea 0%, #5a67d8 100%) !important;
+    color: white !important;
+    border-color: #667eea !important;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3) !important;
 }
 #el,#book{
-    border: 1px solid black;
-    border-radius: 3px;
-    padding: 6px 9px;
+    border: 2px solid #667eea;
+    border-radius: 8px;
+    padding: 10px 14px;
     cursor: pointer;
+    background: white;
+    color: #667eea;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(102, 126, 234, 0.2);
+    font-size: 1.1rem;
+}
+#el:hover,#book:hover{
+    background: #667eea;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
 }
 .variety{
     display: none;
+    animation: slideDown 0.3s ease when visible;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 button{
     width: 100px;
+    background: white;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    color: #333;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 8px 16px;
+    margin: 4px;
+    font-family: 'Hanuman', serif;
+    position: relative;
+    overflow: hidden;
+}
+button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(102, 126, 234, 0.1), transparent);
+    transition: left 0.5s ease;
+    z-index: 0;
+}
+button:hover::before {
+    left: 100%;
+}
+button:hover{
+    background: #667eea;
+    color: white;
+    border-color: #667eea;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    z-index: 1;
+}
+button:active{
+    animation: pulse 0.3s ease;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1.05); }
+    50% { transform: scale(1.08); }
+}
+
+/* Main Content Area */
+.shadow-lg {
+    background: white !important;
+    border-radius: 12px !important;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15) !important;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    animation: fadeInUp 0.6s ease;
+    overflow: hidden;
+}
+
+.shadow-lg:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2) !important;
+    transition: all 0.3s ease;
+}
+
+/* Instruction Sidebar */
+.col-lg-3.shadow-lg {
+    background: linear-gradient(135deg, #667eea 0%, #5a67d8 100%) !important;
+    color: white;
+    padding: 24px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.col-lg-3.shadow-lg p {
+    color: white;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.col-lg-3.shadow-lg b {
+    font-size: 1.1rem;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 /* mobile phone */
 @media (max-width: 575.98px) { 
