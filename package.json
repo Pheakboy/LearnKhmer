@@ -1,0 +1,42 @@
+{
+  "name": "learn-khmer",
+  "version": "1.0.0",
+  "description": "An interactive web application for learning the Khmer (Cambodian) alphabet with audio pronunciation guides",
+  "main": "HTML/index.html",
+  "keywords": [
+    "khmer",
+    "cambodian",
+    "alphabet",
+    "learning",
+    "education",
+    "language",
+    "pronunciation",
+    "interactive"
+  ],
+  "author": {
+    "name": "LearnKhmer Team",
+    "email": "contact@learnkhmer.com"
+  },
+  "license": "MIT",
+  "homepage": "https://learn-khmer.vercel.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/learn-khmer.git"
+  },
+  "scripts": {
+    "dev": "live-server --host=localhost --port=3000 --open=/HTML/index.html",
+    "build": "echo 'Static site - no build required'",
+    "deploy": "vercel --prod"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

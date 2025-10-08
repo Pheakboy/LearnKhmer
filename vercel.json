@@ -1,0 +1,162 @@
+{
+  "version": 2,
+  "name": "learn-khmer",
+  "builds": [
+    {
+      "src": "HTML/index.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "HTML/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "CSS/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "JS/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "Image/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "constant/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "vowel/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "special/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "category2/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "category3/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/HTML/index.html"
+    },
+    {
+      "src": "/index",
+      "dest": "/HTML/index.html"
+    },
+    {
+      "src": "/home",
+      "dest": "/HTML/index.html"
+    },
+    {
+      "src": "/constant",
+      "dest": "/HTML/constant.html"
+    },
+    {
+      "src": "/consonant",
+      "dest": "/HTML/constant.html"
+    },
+    {
+      "src": "/vowel",
+      "dest": "/HTML/vowel.html"
+    },
+    {
+      "src": "/independent",
+      "dest": "/HTML/independent.html"
+    },
+    {
+      "src": "/contact",
+      "dest": "/HTML/contact.html"
+    },
+    {
+      "src": "/CSS/(.*)",
+      "dest": "/CSS/$1"
+    },
+    {
+      "src": "/JS/(.*)",
+      "dest": "/JS/$1"
+    },
+    {
+      "src": "/Image/(.*)",
+      "dest": "/Image/$1"
+    },
+    {
+      "src": "/constant/(.*)",
+      "dest": "/constant/$1"
+    },
+    {
+      "src": "/vowel/(.*)",
+      "dest": "/vowel/$1"
+    },
+    {
+      "src": "/special/(.*)",
+      "dest": "/special/$1"
+    },
+    {
+      "src": "/category2/(.*)",
+      "dest": "/category2/$1"
+    },
+    {
+      "src": "/category3/(.*)",
+      "dest": "/category3/$1"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/CSS/(.*)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/css"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000"
+        }
+      ]
+    },
+    {
+      "source": "/JS/(.*)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/javascript"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000"
+        }
+      ]
+    },
+    {
+      "source": "/Image/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000"
+        }
+      ]
+    },
+    {
+      "source": "/**/*.mp3",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "audio/mpeg"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000"
+        }
+      ]
+    }
+  ]
+}
