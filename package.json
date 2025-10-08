@@ -29,7 +29,8 @@
     "deploy": "vercel --prod"
   },
   "devDependencies": {
-    "live-server": "^1.2.2"
+    "live-server": "^1.2.2",
+    "vercel": "^48.2.6"
   },
   "engines": {
     "node": ">=14.0.0"
