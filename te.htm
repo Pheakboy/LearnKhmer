@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @media (max-width:500px){
+        p{
+            float: right;
+        }
+    }
+</style>
+<body>
+        <p>HELLOO</p>
+        <audio  id="aa" controls><source src="/vowel/v1.mp3"></audio>
+        <button type="button" onclick="playS()">click me</button>
+</body>
+<script>
+    function playS(){
+        document.getElementById("aa").play();
+    }
+</script>
+</html>

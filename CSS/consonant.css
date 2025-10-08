@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanuman&display=swap');*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Hanuman', serif;
+}
+#type1,#type2,#type3,#cate1,#cate2,#cate3{
+    cursor: pointer;
+    font-size: 25px;
+}
+#type1,#cate1{
+    background-color: #536DFE;
+    color: white;
+}
+#el,#book{
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 6px 9px;
+    cursor: pointer;
+}
+.variety{
+    display: none;
+}
+button{
+    width: 100px;
+}
+/* mobile phone */
+@media (max-width: 575.98px) { 
+    button{
+        width: 75px;
+    }
+}
+
+/* landscape */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    button{
+        width: 77px;
+    }
+}
+
+/* ipad*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    button{
+        width: 80px;
+    }
+}
+
+/* ipad pro */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+
+ }
+
+/* Laptop*/
+@media (min-width: 1200px) { 
+
+}

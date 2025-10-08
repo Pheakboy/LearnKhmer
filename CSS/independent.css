@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanuman:wght@300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hanuman", serif;
+}
+
+/* Body and Background */
+body {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+/* Header Styling (Same as contact page for consistency) */
+.header {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.header .nav-link {
+  color: #333 !important;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 8px 16px !important;
+  border-radius: 8px;
+  margin: 0 4px;
+}
+
+.header .nav-link:hover {
+  background: #667eea;
+  color: white !important;
+  transform: translateY(-1px);
+}
+
+.header .name h2 {
+  color: #333;
+  font-weight: 600;
+}
+
+.header .dropdown-toggle {
+  background: transparent !important;
+  border: 1px solid #667eea !important;
+  border-radius: 8px !important;
+  color: #667eea !important;
+  transition: all 0.3s ease;
+}
+
+.header .dropdown-toggle:hover {
+  background: #667eea !important;
+  color: white !important;
+}
+
+.header .dropdown-menu {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.header .dropdown-item {
+  color: #333 !important;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+  margin: 2px;
+}
+
+.header .dropdown-item:hover {
+  background: #f8f9fa !important;
+  color: #667eea !important;
+}
+
+/* Mobile Menu */
+.ver-menu {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.ver-menu .nav-link {
+  color: #333 !important;
+  transition: all 0.3s ease;
+}
+
+.ver-menu .nav-link:hover {
+  color: #667eea !important;
+  background: rgba(102, 126, 234, 0.1);
+  border-radius: 8px;
+}
+
+.ver-menu .tab3 i {
+  color: #667eea;
+  font-size: 1.3rem;
+  margin: 0 8px;
+  transition: all 0.3s ease;
+}
+
+.ver-menu .tab3 i:hover {
+  transform: scale(1.1);
+  color: #5a67d8;
+}
+
+#bar_show {
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #333 !important;
+}
+
+#bar_show:hover {
+  color: #667eea !important;
+}
+
+#logo {
+  transition: transform 0.3s ease;
+}
+
+#logo:hover {
+  transform: scale(1.05);
+}
+
+/* Navigation Buttons (Consonant/Vowel) */
+.container.my-3 input[type="button"] {
+  background: white !important;
+  border: 2px solid #e9ecef !important;
+  border-radius: 10px !important;
+  color: #333 !important;
+  font-weight: 500;
+  padding: 12px 24px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  width: 45% !important;
+}
+
+.container.my-3 input[type="button"]:hover {
+  background: #667eea !important;
+  color: white !important;
+  border-color: #667eea !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.3);
+}
+
+.container.my-3 input[type="button"]:active {
+  transform: translateY(0);
+}
+
+/* Title Section */
+.mm {
+  background: linear-gradient(135deg, #667eea 0%, #5a67d8 100%) !important;
+  color: white;
+  font-size: 1.5rem;
+  padding: 16px 24px;
+  font-weight: 600;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  animation: fadeInUp 0.6s ease;
+  margin-bottom: 2rem;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Main Content Area */
+.col-lg-8.shadow-lg {
+  background: white !important;
+  border-radius: 12px !important;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15) !important;
+  padding: 0 !important;
+  overflow: hidden;
+  animation: fadeInUp 0.8s ease;
+}
+
+.container-fluid .row.bb {
+  padding: 2rem !important;
+}
+
+/* Tutorial Sidebar */
+.bg-danger {
+  background: linear-gradient(135deg, #667eea 0%, #5a67d8 100%) !important;
+  color: white;
+  border-radius: 12px;
+  padding: 24px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  animation: fadeInUp 1s ease;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer Styling */
+footer {
+  background: #2d3748 !important;
+  margin-top: 4rem;
+}
+
+footer .foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 2.5rem 1rem 1.5rem;
+}
+
+footer h3 {
+  color: white;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+footer a {
+  color: #cbd5e0 !important;
+  transition: all 0.3s ease;
+  text-decoration: none !important;
+}
+
+footer a:hover {
+  color: white !important;
+}
+
+footer p {
+  color: #a0aec0;
+  margin-bottom: 0;
+}
+
+/* Remove default Bootstrap border */
+.nav.border-bottom {
+  border-bottom: none !important;
+}
+
+/* Button Sizing */
+button {
+  width: 100px;
+}
+
+/* Responsive Design */
+
+/* Mobile phone */
+@media (max-width: 575.98px) {
+  #break {
+    display: none;
+  }
+
+  button {
+    width: 70px;
+  }
+
+  .mm {
+    font-size: 1.2rem;
+    padding: 12px 16px;
+  }
+
+  .container.my-3 input[type="button"] {
+    width: 48% !important;
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+
+  footer .foot {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer .foot > div {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Landscape */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .mm {
+    font-size: 1.3rem;
+  }
+}
+
+/* iPad */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .mm {
+    font-size: 1.4rem;
+  }
+}
+
+/* iPad Pro */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .mm {
+    font-size: 1.5rem;
+  }
+}
+
+/* Laptop */
+@media (min-width: 1200px) {
+  .mm {
+    font-size: 1.6rem;
+  }
+
+  .container.my-3 input[type="button"] {
+    font-size: 1.1rem;
+  }
+}
+
+/* Additional Animations and Effects */
+.container {
+  animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Hover effects for containers */
+.col-lg-8.shadow-lg:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2) !important;
+  transition: all 0.3s ease;
+}
+
+.bg-danger:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 50px rgba(102, 126, 234, 0.4);
+  transition: all 0.3s ease;
+}
+
+/* Smooth transitions for all elements */
+* {
+  transition: all 0.3s ease;
+}
+
+/* Link styling in navigation buttons */
+a.text-decoration-none {
+  display: block;
+  width: 100%;
+}
+
+/* Better spacing for main content */
+.container-lg.container-md.container-sm.container-fluid {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
