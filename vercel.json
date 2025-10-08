@@ -70,7 +70,7 @@
       ]
     },
     {
-      "source": "/**/*.mp3",
+      "source": "/(.*)\\.mp3$",
       "headers": [
         {
           "key": "Content-Type",
